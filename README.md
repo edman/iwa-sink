@@ -6,7 +6,7 @@ A demo showing off [Isolated Web Apps](https://github.com/WICG/isolated-web-apps
 
 - [Direct Sockets](https://github.com/WICG/direct-sockets)
 - [Controlled Frame](https://github.com/WICG/controlled-frame)
-- [Borderless display mode](https://github.com/WICG/manifest-incubations/blob/gh-pages/borderless-explainer.md)
+- [Unframed display mode](https://github.com/WICG/manifest-incubations/blob/gh-pages/unframed-explainer.md)
 - [Multiscreen capture with auto-permission](https://github.com/screen-share/capture-all-screens)
 
 ### Unrestricted [Protocol Handlers](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/protocol_handlers) & [Launch Handler](https://developer.mozilla.org/en-US/docs/Web/API/Launch_Handler_API)

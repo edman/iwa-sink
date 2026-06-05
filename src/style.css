@@ -34,7 +34,7 @@ body {
   padding-inline: 1rem;
   min-height: calc(100vh - 1rem);
 
-  @media (display-mode: borderless) {
+  @media (display-mode: unframed) {
     margin-top: 2rem;
     min-height: calc(100vh - 3rem);
   }

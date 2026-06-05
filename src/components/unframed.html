@@ -14,24 +14,25 @@
  limitations under the License.
 -->
 
-<script type="module" src="/src/components/scripts/borderless.ts"></script>
+<script type="module" src="/src/components/scripts/unframed.ts"></script>
 
 <div id="border">
   <p>This is a custom top border! Drag me!</p>
 </div>
 
-<button id="borderless">
+<button id="unframed">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height="24"
     viewBox="0 -960 960 960"
     width="24"
-    aria-label="Go Borderless!"
+    aria-hidden="true"
   >
     <path
       d="M120-120v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm160 640v-80h80v80h-80Zm0-320v-80h80v80h-80Zm0-320v-80h80v80h-80Zm160 640v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm160 640v-80h80v80h-80Zm0-320v-80h80v80h-80Zm0-320v-80h80v80h-80Zm160 640v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Z"
     />
   </svg>
+  <span>Go unframed</span>
 </button>
 
 <style>
@@ -63,26 +64,29 @@
     }
   }
 
-  #borderless {
+  #unframed {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
-    border-radius: 50%;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
     border: 0;
     position: absolute;
     right: 1rem;
     bottom: 1rem;
     background-color: #ea4335;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
 
     svg {
       fill: white;
     }
   }
 
-  @media (display-mode: borderless) {
-    #borderless {
+  @media (display-mode: unframed) {
+    #unframed {
       display: none;
     }
 
