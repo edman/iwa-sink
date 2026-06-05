@@ -14,19 +14,19 @@
  limitations under the License.
 -->
 
-<script type="module" src="/src/components/scripts/borderless.ts"></script>
+<script type="module" src="/src/components/scripts/unframed.ts"></script>
 
 <div id="border">
   <p>This is a custom top border! Drag me!</p>
 </div>
 
-<button id="borderless">
+<button id="unframed">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height="24"
     viewBox="0 -960 960 960"
     width="24"
-    aria-label="Go Borderless!"
+    aria-label="Go Unframed!"
   >
     <path
       d="M120-120v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm160 640v-80h80v80h-80Zm0-320v-80h80v80h-80Zm0-320v-80h80v80h-80Zm160 640v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm160 640v-80h80v80h-80Zm0-320v-80h80v80h-80Zm0-320v-80h80v80h-80Zm160 640v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Zm0-160v-80h80v80h-80Z"
@@ -63,7 +63,7 @@
     }
   }
 
-  #borderless {
+  #unframed {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,8 +81,8 @@
     }
   }
 
-  @media (display-mode: borderless) {
-    #borderless {
+  @media (display-mode: unframed) {
+    #unframed {
       display: none;
     }
 
