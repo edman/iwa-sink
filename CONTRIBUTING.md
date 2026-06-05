@@ -30,3 +30,27 @@ Guidelines](https://opensource.google/conduct/).
 All submissions, including submissions by project members, require review. We
 use [GitHub pull requests](https://docs.github.com/articles/about-pull-requests)
 for this purpose.
+
+## Local Development Setup
+
+To build and sign the app locally, you will need to generate a private key.
+
+1. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+2. Generate encrypted signing key (remember the passphrase):
+   ```bash
+   mkdir -p certs
+   openssl genpkey -algorithm Ed25519 -out certs/temp.pem
+   openssl pkcs8 -in certs/temp.pem -topk8 -out certs/encrypted_key.pem
+   rm certs/temp.pem
+   ```
+3. Set passphrase in `.env`:
+   ```env
+   KEY_PASSPHRASE=your_passphrase
+   ```
+4. Build:
+   ```bash
+   pnpm run build
+   ```
